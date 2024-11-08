@@ -21,5 +21,5 @@ def run(command):
     return result
 
 
-run('python setup.py develop --install-dir /kaggle/working')
+run("pip install --editable . --target /kaggle/working")
 run('python easy_gold/main.py')
